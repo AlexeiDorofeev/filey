@@ -1,0 +1,3 @@
+storage:
+  location: "upload-dir"
+  maxFileSize: 52428800
