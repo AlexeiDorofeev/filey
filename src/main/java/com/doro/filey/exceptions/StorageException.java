@@ -1,4 +1,4 @@
-package exceptions;
+package com.doro.filey.exceptions;
 
 public class StorageException extends RuntimeException {
     public StorageException(String message) {

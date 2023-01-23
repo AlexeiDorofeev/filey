@@ -1,11 +1,8 @@
-package config;
+package com.doro.filey.config;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.boot.context.properties.EnableConfigurationProperties;
-import org.springframework.context.annotation.ComponentScan;
 
-@ConfigurationProperties("storage")
-@EnableConfigurationProperties(StorageProperties.class)
+@ConfigurationProperties(prefix = "storage")
 public class StorageProperties {
 
     /**

@@ -1,7 +1,7 @@
-package services;
+package com.doro.filey.services;
 
-import config.StorageProperties;
-import exceptions.StorageException;
+import com.doro.filey.config.StorageProperties;
+import com.doro.filey.exceptions.StorageException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
