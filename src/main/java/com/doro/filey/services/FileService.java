@@ -16,6 +16,9 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Stream;
 
 @Service
 public class FileService {
@@ -57,5 +60,14 @@ public class FileService {
         }
     }
 
+    public List<String> listAllFiles() {
+        List<String> fileNames = new ArrayList<>();
+        try (Stream<Path> files = Files.list(rootLocation)) {
+            files.forEach(file -> fileNames.add(file.getFileName().toString()));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return fileNames;
+    }
 }
 
