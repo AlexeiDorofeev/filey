@@ -3,8 +3,8 @@ server:
 
 
 storage:
-  location: "upload-dir"
-  maxFileSize: 52428800
+#  location: C:\Users\Alexei.Dorofeev\Desktop\my
+#  maxFileSize: 52428800
 
 spring:
   datasource:
